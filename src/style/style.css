@@ -32,11 +32,18 @@ body {
     border-radius: 8px;
 }
 
-img {
+.img-desktop {
     height: 25rem;
     object-fit: cover;
     border-top-left-radius: inherit;
     border-bottom-left-radius: inherit;
+}
+
+.img-mobile {
+    width: 20rem;
+    display: none;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
 }
 
 .info {
@@ -109,4 +116,19 @@ img {
 
 .button:hover {
     background: hsl(158, 36%, 25%);
+}
+
+@media (max-width: 600px) {
+    .card {
+        grid-template-columns: 1fr;
+        width: 20rem
+    }
+
+    .img-desktop {
+        display: none;
+    }
+
+    .img-mobile {
+        display: block;
+    }
 }
