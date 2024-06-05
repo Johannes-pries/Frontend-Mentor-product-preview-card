@@ -89,13 +89,14 @@ img {
     }
 
     .button {
-        width: 100%;
+        width: 97%;
         height: 2.6rem;
         border: none;
         background: var(--Dark-cyan);
         color: var(--White);
         font-weight: bold;
         border-radius: 7px;
+        cursor: pointer;
 
         .icon-cart {
             height: 1rem;
@@ -104,4 +105,8 @@ img {
         }
 
     }
+}
+
+.button:hover {
+    background: hsl(158, 36%, 25%);
 }
